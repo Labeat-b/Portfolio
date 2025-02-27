@@ -3,8 +3,8 @@ require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 use Dotenv\Dotenv;
+
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
@@ -21,15 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         $mail->isSMTP();
-        $mail->Host = $_ENV['SMTP_HOST'];
+        $mail->Host = $_ENV['SMTP_HOST']; 
         $mail->SMTPAuth = true;
         $mail->Username = $_ENV['SMTP_USERNAME'];
         $mail->Password = $_ENV['SMTP_PASSWORD'];
         $mail->SMTPSecure = $_ENV['SMTP_SECURE'];
         $mail->Port = $_ENV['SMTP_PORT'];
 
-        $mail->setFrom($email, $name);
-        $mail->addAddress('labeat.bytyqi@gmail.com', 'Labeat Bytyqi'); 
+        $mail->setFrom($email, $name); 
+        $mail->addAddress('labeat.bytyqi@gmail.com', 'Labeat Bytyqi');
 
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Message';
