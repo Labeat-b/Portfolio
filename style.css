@@ -1,0 +1,260 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1, h2 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Expertise Section */
+.expertise-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech {
+  background-color: #222;
+  width: 50px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tech:hover {
+  transform: translateY(-10px);
+}
+
+/* Njohurite Section */
+#njohurite {
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sub-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.njohurite-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.njohurite-list div {
+  background: #262626;
+  border: 2px solid #fff;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.njohurite-list div:hover {
+  background: grey;
+  transform: translateY(-10px);
+}
+
+/* Project Section */
+.project {
+  margin-bottom: 30px;
+}
+
+.project a {
+  color: #fff;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+#contact h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 300px;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .expertise-container, .njohurite-list {
+      justify-content: center;
+  }
+
+  .tech {
+      width: 80px;
+      height: 80px;
+  }
+
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info, .contact-form {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+
+  h1, h2 {
+      font-size: 1.5em;
+  }
+
+  .tech {
+      width: 60px;
+      height: 60px;
+  }
+}

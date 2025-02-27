@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000; 
+    color: #fff;         
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  section {
+    margin-bottom: 60px;
+  }
+  
+  h1, h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+
+  #njohurite {
+    padding: 30px 0;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .sub-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .njohurite-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .njohurite-list div {
+    background: #262626;
+    border: 2px solid #fff; 
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+  }
+  
+  .njohurite-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .njohurite-list div h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .njohurite-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .njohurite-list div:hover {
+    background: grey;
+    transform: translateY(-10px);
+  }
+  
+
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project a {
+    color: #fff;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project a:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+
+  
